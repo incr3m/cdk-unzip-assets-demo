@@ -24,17 +24,17 @@
       "Type": "String",
       "Description": "Artifact hash for asset \"ad3302cb661010b2b46260e3336a5630cca8b97f52b36307c1ebbce788abc326\""
     },
-    "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfS3Bucket3C7ACDF9": {
+    "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfS3Bucket81CB0B22": {
       "Type": "String",
-      "Description": "S3 bucket for asset \"8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddf\""
+      "Description": "S3 bucket for asset \"dd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cf\""
     },
-    "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfS3VersionKeyADBD0AF9": {
+    "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfS3VersionKey47AA71FB": {
       "Type": "String",
-      "Description": "S3 key for asset version \"8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddf\""
+      "Description": "S3 key for asset version \"dd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cf\""
     },
-    "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfArtifactHash561ABAB3": {
+    "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfArtifactHashDB6CDD9B": {
       "Type": "String",
-      "Description": "Artifact hash for asset \"8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddf\""
+      "Description": "Artifact hash for asset \"dd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cf\""
     },
     "AssetParametersb846ecf8ca54d4377f6dcca740a13d65442e53f04e1fb67d5b4e41bb9afb19d6S3Bucket5F89015D": {
       "Type": "String",
@@ -886,7 +886,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": {
-            "Ref": "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfS3Bucket3C7ACDF9"
+            "Ref": "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfS3Bucket81CB0B22"
           },
           "S3Key": {
             "Fn::Join": [
@@ -899,7 +899,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfS3VersionKeyADBD0AF9"
+                          "Ref": "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfS3VersionKey47AA71FB"
                         }
                       ]
                     }
@@ -912,7 +912,7 @@
                       "Fn::Split": [
                         "||",
                         {
-                          "Ref": "AssetParameters8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddfS3VersionKeyADBD0AF9"
+                          "Ref": "AssetParametersdd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cfS3VersionKey47AA71FB"
                         }
                       ]
                     }
@@ -986,7 +986,7 @@
       ],
       "Metadata": {
         "aws:cdk:path": "CdkWorkshop/MyTrigger/Resource",
-        "aws:asset:path": "asset.8b4e211a9feb526f4e326416bc37d3e1d533324d93f913c40bacc566140ecddf",
+        "aws:asset:path": "asset.dd7f67056e9fb823373101b9398f608d3b95be9f83101b1a441259c37ddfc6cf",
         "aws:asset:is-bundled": false,
         "aws:asset:property": "Code"
       }
@@ -1001,7 +1001,7 @@
           ]
         },
         "HandlerArn": {
-          "Ref": "MyTriggerCurrentVersion8802742Bc6b77e8e1e3b1cc2f7286ca66a960fbf"
+          "Ref": "MyTriggerCurrentVersion8802742Be5b4ebffc90d3554435b000bf369dfa5"
         }
       },
       "UpdateReplacePolicy": "Delete",
@@ -1010,7 +1010,7 @@
         "aws:cdk:path": "CdkWorkshop/MyTrigger/Trigger/Default/Default"
       }
     },
-    "MyTriggerCurrentVersion8802742Bc6b77e8e1e3b1cc2f7286ca66a960fbf": {
+    "MyTriggerCurrentVersion8802742Be5b4ebffc90d3554435b000bf369dfa5": {
       "Type": "AWS::Lambda::Version",
       "Properties": {
         "FunctionName": {
@@ -1054,7 +1054,7 @@
                   ],
                   "Resource": [
                     {
-                      "Ref": "MyTriggerCurrentVersion8802742Bc6b77e8e1e3b1cc2f7286ca66a960fbf"
+                      "Ref": "MyTriggerCurrentVersion8802742Be5b4ebffc90d3554435b000bf369dfa5"
                     }
                   ]
                 }

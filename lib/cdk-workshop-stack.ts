@@ -74,6 +74,11 @@ export class CdkWorkshopStack extends cdk.Stack {
       searchResolversAsset
     );
   }
+
+  protected onPrepare(): void {
+    const stack = this.node._actualNode as unknown as cdk.CfnStack;
+    console.log(">>lib/cdk-workshop-stack::", "stack", stack); //TRACE
+  }
 }
 
 export default class AppSyncBatchedResolverStack extends cdk.NestedStack {
